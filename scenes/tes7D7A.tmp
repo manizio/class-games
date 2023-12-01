@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://da05g74xtl2g7"]
+
+[ext_resource type="PackedScene" uid="uid://cbs5dk3mluftb" path="res://scenes/character.tscn" id="1_jbalj"]
+[ext_resource type="Texture2D" uid="uid://dijfl41aq2ea7" path="res://Captura de tela 2023-06-19 215331.png" id="2_ruba8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CapturaDeTela2023-06-19215331" type="Sprite2D" parent="."]
+position = Vector2(-222, -87)
+texture = ExtResource("2_ruba8")
+
+[node name="Character" parent="." instance=ExtResource("1_jbalj")]
+
+[node name="Camera2D" type="Camera2D" parent="Character"]
