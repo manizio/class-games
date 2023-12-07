@@ -14,7 +14,11 @@ func _process(delta):
 	if interact and Input.is_action_just_pressed("action"):
 		john.get_node("TextEdit").visible = true
 		john.get_node("TextEdit").text = "imagine"
-		john.get_node("Timer").start()
+		john.get_node("FadeTimer").start()
+	if velocity.x > 0:
+		$Sprite2D.flip_h = false
+	if velocity.x < 0:
+		$Sprite2D.flip_h = true
 
 func _physics_process(delta):
 
