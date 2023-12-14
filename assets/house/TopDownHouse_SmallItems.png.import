@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lffchh1qh8o3"
-path="res://.godot/imported/john.png-74a19031f3e6baaecf0b32a833a931f1.ctex"
+uid="uid://hglfqll6g4ly"
+path="res://.godot/imported/TopDownHouse_SmallItems.png-78c1190cf0fe210db25d4533b6e752f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://john.png"
-dest_files=["res://.godot/imported/john.png-74a19031f3e6baaecf0b32a833a931f1.ctex"]
+source_file="res://assets/house/TopDownHouse_SmallItems.png"
+dest_files=["res://.godot/imported/TopDownHouse_SmallItems.png-78c1190cf0fe210db25d4533b6e752f8.ctex"]
 
 [params]
 

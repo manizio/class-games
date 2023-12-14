@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_3ry32"]
 [ext_resource type="PackedScene" uid="uid://cbs5dk3mluftb" path="res://scenes/character.tscn" id="1_jbalj"]
-[ext_resource type="Texture2D" uid="uid://nt5sbvdg0nvd" path="res://assets/Bf4md.jpg" id="2_e3wwj"]
+[ext_resource type="Texture2D" uid="uid://nt5sbvdg0nvd" path="res://Bf4md.jpg" id="1_xccf1"]
 [ext_resource type="PackedScene" uid="uid://beok60kg52snd" path="res://scenes/ponte.tscn" id="3_56c6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_23ywv"]
@@ -13,9 +13,12 @@ script = ExtResource("1_3ry32")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(14.5, 30)
-texture = ExtResource("2_e3wwj")
+scale = Vector2(3.468, 3.15913)
+texture = ExtResource("1_xccf1")
 
 [node name="Character" parent="." instance=ExtResource("1_jbalj")]
+
+[node name="Camera2D" type="Camera2D" parent="Character"]
 
 [node name="Ponte" parent="." instance=ExtResource("3_56c6i")]
 position = Vector2(-380, -24)

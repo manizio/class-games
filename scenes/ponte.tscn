@@ -1,23 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://beok60kg52snd"]
 
 [ext_resource type="Script" path="res://scenes/ponte.gd" id="1_rkd7j"]
-[ext_resource type="Texture2D" uid="uid://lffchh1qh8o3" path="res://john.png" id="1_wc57n"]
+[ext_resource type="Texture2D" uid="uid://lffchh1qh8o3" path="res://assets/john.png" id="2_nn8j0"]
 [ext_resource type="Script" path="res://scenes/TextEdit.gd" id="2_ob0fg"]
-
-[sub_resource type="Animation" id="Animation_2daf0"]
-resource_name = "fade"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RigidBody2D/Sprite2D:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_vg3xv"]
 length = 0.001
@@ -32,6 +17,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2daf0"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RigidBody2D/Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3hsv4"]
@@ -49,7 +49,7 @@ gravity_scale = 0.0
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
 position = Vector2(2.5, 0.5)
 scale = Vector2(0.482, 0.658)
-texture = ExtResource("1_wc57n")
+texture = ExtResource("2_nn8j0")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
 polygon = PackedVector2Array(-118, 165, -111, 105, -104, 94, -65, 75, -80, 48, -90, 34, -108, -9, -35, -155, 8, -155, 44, -103, 60, -24, 60, 26, 45, 39, 50, 51, 89, 61, 104, 83, 121, 122, 125, 164)
