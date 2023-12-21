@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://rr51x26xsfav"]
+[gd_scene load_steps=5 format=3 uid="uid://rr51x26xsfav"]
 
-[ext_resource type="Script" path="res://scenes/bedroom.gd" id="1_mmo6l"]
+[ext_resource type="Script" path="res://scripts/bedroom.gd" id="1_mmo6l"]
 [ext_resource type="TileSet" uid="uid://v7vqb8bded4v" path="res://tilesets/house_floors.tres" id="1_qofkh"]
 [ext_resource type="PackedScene" uid="uid://cbs5dk3mluftb" path="res://scenes/character.tscn" id="2_t87gx"]
+[ext_resource type="PackedScene" uid="uid://iksxrurtqimb" path="res://scenes/npc.tscn" id="4_vbqs1"]
 
 [node name="Bedroom" type="Node2D"]
 script = ExtResource("1_mmo6l")
@@ -22,3 +23,7 @@ layer_3/tile_data = PackedInt32Array(524321, 393218, 1, 524322, 262146, 0, 52431
 [node name="Character" parent="." instance=ExtResource("2_t87gx")]
 position = Vector2(305, 240)
 scale = Vector2(0.5, 0.5)
+
+[node name="npc" parent="." instance=ExtResource("4_vbqs1")]
+position = Vector2(474, 269)
+scale = Vector2(0.3, 0.3)
